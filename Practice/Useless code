@@ -1,0 +1,73 @@
+# # tic tac toe attempt
+# import random
+# matrix = [
+#     ['___','___','___'],
+#     ['___','___','___'],
+#     ['   ','   ','   ']
+# ]
+
+# def square(matrix):
+#     gameover = False
+#     compos_list_x = []
+#     compos_list_y = []
+#     user_input = input('Choose between O or X\n')    
+#     while gameover == False:
+#         pos = [0,1,2]
+#         computer_row = int(random.choice(pos))
+#         computer_col = int(random.choice(pos))
+#         user = input('Choose row and column\n')
+
+#         if user_input == 'O':
+#             if computer_row < 2:
+#                 computer_choice = '_X_'
+#             elif computer_row == 2:
+#                 computer_choice = ' X '
+#         elif user_input == 'X':
+#             if computer_row < 2:
+#                 computer_choice = '_O_'
+#             elif computer_row == 2:
+#                 computer_choice = ' O '
+#         if user == 'quit':
+#             quit()
+
+#         matrix[computer_row].pop(computer_col)
+#         matrix[computer_row].insert(computer_col,computer_choice)
+#         compos_list_x.append(computer_row)
+#         compos_list_y.append(computer_col)
+
+#         user_answer = user.split(',')
+#         matrix[int(user_answer[0])].pop(int(user_answer[1]))
+#         matrix[int(user_answer[0])].insert(int(user_answer[1]),user_input)
+
+#         for i in range(len(matrix)):
+#             for j in range(len(matrix[i])):
+#                 if j < 2:
+#                     print(matrix[i][j],end = '|')
+#                 else:
+#                     print(matrix[i][j])
+            
+# square(matrix)
+# print(dir(list))
+
+# x1 = int(input('Enter lower value'))
+# x2 = int(input('Enter upper value'))
+# for i in range(100): 
+#     x = (x1 + x2)/2
+#     if x < 1.414: 
+#         x1 = x
+#     else: 
+#         x2 = x
+#     print(x, end = '\n')
+
+matrix = [
+    [13,324,32,32,423,4],
+    [234,32,432,34,4324,3],
+    [24,3,234,53,523,423]
+]
+print(matrix[][])
+
+# import numpy as np
+# output = np.array([1,23,34,32,532,523,432])
+# print(type(output[1:4]))
+
+coursera_aid = 'This course can give me a big hand for my future studies I have seen many positive reviews about this course so I want to complete this course for enhancing my knowledge and showing this certificate for my future job opportunities. I have already completed the previous course and want to complete the whole 3 courses in the specialization. My friend said that this course can boost my performance soo it is totally worth it and I am thinking that I will work on it in my future too. As I mentioned earlier there is an amount of loan to clear so I need to earn money in future and  this is the best possible option I request you to accept the financial aid I promise that I will complete this course on time now all my future depends on this course so please accept my financial aid it will be very helpful for me.'
