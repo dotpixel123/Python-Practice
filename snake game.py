@@ -77,7 +77,7 @@ def title_score(font,titlefont,score,highscore):
     win.blit(display_high_score,(50,60))
     win.blit(title,(320,50))
     if score[-1] > int(highscore):
-        file = open('C:\\Users\\KIIT\\Desktop\\Code\\Python\\Pygame\\Highscore for snake game.txt','w+')
+        file = open("Highscore for snake game.txt",'w+')
         file.write(str(score[-1]))
         file.close()
 
@@ -88,7 +88,7 @@ def over_screen(font,font2,snake):
     win.blit(rerun,(width/2 - 100,height/2))
     pygame.draw.rect(win,red,snake)
 
-file = open('C:\\Users\\KIIT\\Desktop\\Code\\Python\\Pygame\\Highscore for snake game.txt','r')
+file = open("Highscore for snake game.txt",'r')
 high_score = file.read()
 file.close()
 def main_loop():
